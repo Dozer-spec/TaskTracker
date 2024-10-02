@@ -4,23 +4,35 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next lint && next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "firebase": "^10.14.0",
+    "lucide-react": "^0.446.0",
+    "moment": "^2.29.4",
+    "next": "14.2.13",
     "react": "^18",
+    "react-big-calendar": "^1.14.1",
+    "react-datepicker": "^4.25.0",
     "react-dom": "^18",
-    "next": "14.2.13"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@shadcn/ui": "^0.0.4",
     "@types/node": "^20",
     "@types/react": "^18",
+    "@types/react-big-calendar": "^1.8.12",
+    "@types/react-datepicker": "^4.8.0",
     "@types/react-dom": "^18",
+    "@types/uuid": "^9.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.13"
+    "typescript": "^5"
   }
 }
