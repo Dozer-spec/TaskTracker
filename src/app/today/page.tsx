@@ -40,7 +40,7 @@ export default function Today() {
 
   return (
     <div className="min-h-screen bg-white text-black p-8">
-      <h1 className="text-4xl font-bold mb-8 text-red-600">Today's Tasks</h1>
+      <h1 className="text-4xl font-bold mb-8 text-red-600">Today&apos;s Tasks</h1>
       
       {todayTasks.length === 0 ? (
         <p className="text-gray-500">No tasks due today.</p>
