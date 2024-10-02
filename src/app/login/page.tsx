@@ -18,6 +18,7 @@ export default function Login() {
       await signInWithEmailAndPassword(auth, email, password);
       router.push('/');
     } catch (error) {
+      console.error('Login error:', error);
       setError('Failed to log in');
     }
   };
@@ -80,7 +81,7 @@ export default function Login() {
         </form>
         <div className="text-center">
           <Link href="/register" className="font-medium text-red-600 hover:text-red-500">
-            Don't have an account? Sign up
+            Don&apos;t have an account? Sign up
           </Link>
         </div>
       </div>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { useTaskContext, Task } from "@/contexts/TaskContext";
+import { useTaskContext} from "@/contexts/TaskContext";
 import { Pencil, Trash2 } from "lucide-react";
 import { ConfirmationDialog } from "@/components/ConfirmationDialog";
 
@@ -122,8 +122,7 @@ export default function Home() {
           isOpen={deleteConfirmation.isOpen}
           onClose={() => setDeleteConfirmation(null)}
           onConfirm={handleConfirmDelete}
-          title="Delete Task"
-          message={`Are you sure you want to delete the task "${deleteConfirmation.taskText}"?`}
+          taskText={deleteConfirmation.taskText}
         />
       )}
     </div>
